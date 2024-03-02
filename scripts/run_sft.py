@@ -40,7 +40,15 @@ from alignment import (
     get_tokenizer,
 )
 from trl import SFTTrainer
+# Import the W&B Python Library
+import wandb
 
+# 1. Start a W&B Run
+# run = wandb.init(
+#     project="SFT",
+#     notes="My first SFT experiment",
+#     tags=["baseline", "ultrachat_200k"],
+# )
 
 logger = logging.getLogger(__name__)
 
